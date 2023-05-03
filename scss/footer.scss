@@ -1,0 +1,105 @@
+.footer {
+    padding: 40px 0 30px;
+    background: rgba(21, 20, 36, 0.5);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    @media (max-width: 700px) {
+        padding: 25px 0;
+    }
+
+    &__top {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 60px;
+
+        @media (max-width: 1600px) {
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 700px) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &__logo {
+        @media (max-width: 700px) {}
+    }
+
+    &__nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        @media (max-width: 990px) {
+            gap: 5px 20px;
+        }
+
+        @media (max-width: 700px) {
+            grid-column: 1/3;
+            order: 2;
+        }
+
+        @media (max-width: 400px) {
+            flex-direction: column;
+        }
+    }
+
+    &__nav-link {
+        font-size: 18px;
+        text-align: center;
+        color: #fff;
+        transition: color .2s ease;
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: $purpleColor;
+            }
+        }
+
+        @media (max-width: 1600px) {
+            font-size: 15px;
+        }
+    }
+
+    &__social-list {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        @media (max-width: 700px) {
+            justify-content: end;
+        }
+    }
+
+    &__social-link {
+        color: inherit;
+        transition: color .2s ease;
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: $purpleColor;
+            }
+        }
+
+        @media (max-width: 1600px) {
+            svg {
+                width: 26px;
+                height: 26px;
+            }
+        }
+    }
+
+    &__copyright {
+        font-size: 16px;
+        text-align: center;
+
+        @media (max-width: 1600px) {
+            font-size: 13px;
+        }
+    }
+}

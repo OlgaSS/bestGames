@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>BestGames - каталог игр</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link type="image/ico" sizes="100x100" rel="icon" href="img/icons.ico">
+
+  <script type="module" src="js/script.js"></script>
+  <script type="module" src="js/catalog.js"></script>
+  <script type="module" src="js/expectedGames.js"></script>
+  <script type="module" src="js/topGames.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1 class="visibility-hidden">Лучший каталог игр</h1>
+    <header class="header">
+      <div class="header__container container">
+        <img class="header__logo logo" src="img/logo.svg" alt="Логотип BestGames">
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#expectedGames" class="header__link link">Ожидаемые игры</a>
+            </li>
+            <li class="header__item">
+              <a href="#catalog" class="header__link link">Каталог игр</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__button" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="main-block" style="background-image: url('img/banner01.webp');">
+        <div class="main-block__container container">
+          <div class="main-block__content">
+            <h2 class="visibility-hidden">Battlefield 2042</h2>
+            <p class="main-block__subtitle">Преодолевай трудности, где царит хаос</p>
+            <img class="main-block__game-logo" src="img/ad-logo.svg" alt="Логотип игры Battlefield 2042">
+            <a class="main-block__button button"
+              href="https://www.ea.com/games/battlefield/battlefield-2042?isLocalized=true" target="_blank">Узнать
+              больше</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="ad-block">
+        <div class="ad-block__container container">
+          <ul class="ad-block__game-list">
+            <li data-tab="1" class="ad-block__game-item active" style="background-image: url('img/nfs.webp');">
+              <h3 class="ad-block__game-title">NFS Unbound</h3>
+              <a class="ad-block__game-link active"
+                href="https://www.ea.com/games/need-for-speed/need-for-speed-unbound?isLocalized=true">узнать больше</a>
+            </li>
+            <li data-tab="2" class="ad-block__game-item" style="background-image: url('img/fifa.webp');">
+              <h3 class="ad-block__game-title">Fifa 22</h3>
+              <a class="ad-block__game-link" href="https://www.ea.com/ru-ru/games/fifa/fifa-22">узнать
+                больше</a>
+            </li>
+            <li data-tab="3" class="ad-block__game-item" style="background-image: url('img/apex.webp');">
+              <h3 class="ad-block__game-title">Apex legends</h3>
+              <a class="ad-block__game-link" href="https://www.ea.com/ru-ru/games/apex-legends">узнать
+                больше</a>
+            </li>
+          </ul>
+
+          <div class="ad-block__video-wrapper">
+            <div data-id="1" class="ad-block__video active">
+              <div class="ad-block__video-img active">
+                <img src="img/nfs.webp" alt="Баннер игры NFS">
+              </div>
+              <button class="ad-block__video-button active" aria-label="воспроизвести">
+                <svg class="play" width="100%" height="100%" viewBox="0 0 80 80" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M80 40C80 62.0914 62.0914 80 40 80C17.9086 80 0 62.0914 0 40C0 17.9086 17.9086 0 40 0C62.0914 0 80 17.9086 80 40Z"
+                    fill="white" />
+                  <path
+                    d="M53 38.268C54.3333 39.0378 54.3333 40.9623 53 41.7321L35 52.1244C33.6667 52.8942 32 51.9319 32 50.3923L32 29.6077C32 28.0681 33.6667 27.1058 35 27.8756L53 38.268Z"
+                    fill="#5A57E0" />
+                </svg>
+              </button>
+              <iframe data-link="1" class="video active" width="100%" height="100%" title="Трейлер игры NFS Unbound"
+                src="https://www.youtube-nocookie.com/embed/6HhEs9Skzro?color=white&amp;mute=1" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+
+            <div data-id="2" class="ad-block__video">
+              <div class="ad-block__video-img">
+                <img src="img/fifa.webp" alt="Баннер игры Fifa">
+              </div>
+              <button class="ad-block__video-button" aria-label="воспроизвести">
+                <svg class="play" width="100%" height="100%" viewBox="0 0 80 80" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M80 40C80 62.0914 62.0914 80 40 80C17.9086 80 0 62.0914 0 40C0 17.9086 17.9086 0 40 0C62.0914 0 80 17.9086 80 40Z"
+                    fill="white" />
+                  <path
+                    d="M53 38.268C54.3333 39.0378 54.3333 40.9623 53 41.7321L35 52.1244C33.6667 52.8942 32 51.9319 32 50.3923L32 29.6077C32 28.0681 33.6667 27.1058 35 27.8756L53 38.268Z"
+                    fill="#5A57E0" />
+                </svg>
+              </button>
+              <iframe data-link="2" class="video" width="100%" height="100%" title="Трейлер игры Fifa 22"
+                src="https://www.youtube-nocookie.com/embed/0tIW1X2dv0c?color=white&amp;mute=1" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+
+            <div data-id="3" class="ad-block__video">
+              <div class="ad-block__video-img">
+                <img src="img/apex.webp" alt="Баннер игры Apex legends">
+              </div>
+              <button class="ad-block__video-button" aria-label="воспроизвести">
+                <svg class="play" width="100%" height="100%" viewBox="0 0 80 80" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M80 40C80 62.0914 62.0914 80 40 80C17.9086 80 0 62.0914 0 40C0 17.9086 17.9086 0 40 0C62.0914 0 80 17.9086 80 40Z"
+                    fill="white" />
+                  <path
+                    d="M53 38.268C54.3333 39.0378 54.3333 40.9623 53 41.7321L35 52.1244C33.6667 52.8942 32 51.9319 32 50.3923L32 29.6077C32 28.0681 33.6667 27.1058 35 27.8756L53 38.268Z"
+                    fill="#5A57E0" />
+                </svg>
+              </button>
+              <iframe data-link="3" class="video" width="100%" height="100%" title="Трейлер игры Apex Legends"
+                src="https://www.youtube-nocookie.com/embed/vgRpFAeEAn4?color=white&amp;mute=1" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about__container container">
+          <h2 class="about__title">Открой мир захватывающих приключений и поединков!</h2>
+          <div class="about__text">
+            <p>Добро пожаловать в <span>BestGames</span> - мир красочных и незабываемых игр! Здесь вы найдете игру на
+              любой вкус и цвет, ознакомитесь с самыми популярными и ожидаемыми играми в мире.</p>
+            <p>Каталог <span>BestGames</span> приятно удивит своим разнообразием любого игрока. Наша коллекция игр
+              включает большое количество жанров, от самых малочисленных файтингов и головоломок до самых
+              распространенных шутеров.</p>
+            <p>В каталоге все игры удобно отсортированы по популярным жанрам и содержат полную информацию, включая
+              скриншоты,
+              рейтинг, дату выхода и другую полезную информацию.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="expected-games" id="expectedGames">
+        <div class="expected-games__container container">
+          <div class="expected-games__top">
+            <h2 class="expected-games__title title">Самые ожидаемые</h2>
+            <div class="expected-games__arrows arrows">
+              <button class="expected-games__arrow expected-games__arrow-prev arrow arrow-prev" aria-label="назад">
+                <svg width="41" height="16" viewBox="0 0 41 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM41 7L1 7V9L41 9V7Z" />
+                </svg>
+              </button>
+              <button class="expected-games__arrow expected-games__arrow-next arrow arrow-next" aria-label="вперед">
+                <svg width="41" height="16" viewBox="0 0 41 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="expected-games__container slider-container">
+            <ul class="expected-games__list slider-track"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="top-games" id="topGames">
+        <div class="top-games__container container">
+          <h2 class="top-games__title bigtTitle">Top Games</h2>
+          <div class="top-games__gallery">
+            <ul class="top-games__cards"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog" id="catalog">
+        <div class="catalog__container container">
+          <div class="catalog__top">
+            <h2 class="catalog__title title">Каталог игр</h2>
+            <ul class="catalog__filter">
+              <li class="catalog__filter-item">Все</li>
+              <li class="catalog__filter-item">Приключения</li>
+              <li class="catalog__filter-item">Экшен</li>
+              <li class="catalog__filter-item">Симуляторы</li>
+              <li class="catalog__filter-item">Шутеры</li>
+              <li class="catalog__filter-item">Хорроры</li>
+            </ul>
+          </div>
+          <ul class="catalog__cards"></ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__conyainer container">
+        <div class="footer__top">
+          <img class="footer__logo logo" src="img/logo.svg" alt="Логотип BestGames">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a class="footer__nav-link link" href="#expectedGames">Ожидаемые игры</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link link" href="#topGames">Топ игры</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link link" href="#catalog">Каталог игр</a>
+            </li>
+          </ul>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a href="https://www.facebook.com/" target="_blank" class="footer__social-link"
+                aria-label="Наша страница в Facebook">
+                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0,0,255.99828,255.99828" width="30px" height="30px" fill-rule="nonzero">
+                  <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+                    stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                    font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                    <g transform="scale(8.53333,8.53333)">
+                      <path
+                        d="M15,3c-6.627,0 -12,5.373 -12,12c0,6.016 4.432,10.984 10.206,11.852v-8.672h-2.969v-3.154h2.969v-2.099c0,-3.475 1.693,-5 4.581,-5c1.383,0 2.115,0.103 2.461,0.149v2.753h-1.97c-1.226,0 -1.654,1.163 -1.654,2.473v1.724h3.593l-0.487,3.154h-3.106v8.697c5.857,-0.794 10.376,-5.802 10.376,-11.877c0,-6.627 -5.373,-12 -12,-12z">
+                      </path>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="https://www.instagram.com/" target="_blank" class="footer__social-link"
+                aria-label="Наша страница в Instagram">
+                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0,0,255.99828,255.99828" width="30px" height="30px" fill-rule="nonzero">
+                  <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+                    stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                    font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                    <g transform="scale(8.53333,8.53333)">
+                      <path
+                        d="M9.99805,3c-3.859,0 -6.99805,3.14195 -6.99805,7.00195v10c0,3.859 3.14195,6.99805 7.00195,6.99805h10c3.859,0 6.99805,-3.14195 6.99805,-7.00195v-10c0,-3.859 -3.14195,-6.99805 -7.00195,-6.99805zM22,7c0.552,0 1,0.448 1,1c0,0.552 -0.448,1 -1,1c-0.552,0 -1,-0.448 -1,-1c0,-0.552 0.448,-1 1,-1zM15,9c3.309,0 6,2.691 6,6c0,3.309 -2.691,6 -6,6c-3.309,0 -6,-2.691 -6,-6c0,-3.309 2.691,-6 6,-6zM15,11c-2.20914,0 -4,1.79086 -4,4c0,2.20914 1.79086,4 4,4c2.20914,0 4,-1.79086 4,-4c0,-2.20914 -1.79086,-4 -4,-4z">
+                      </path>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="https://twitter.com/" target="_blank" class="footer__social-link"
+                aria-label="Наша страница в Twitter">
+                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0,0,255.99828,255.99828" width="30px" height="30px" fill-rule="nonzero">
+                  <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+                    stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                    font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                    <g transform="scale(8.53333,8.53333)">
+                      <path
+                        d="M15,3c-6.627,0 -12,5.373 -12,12c0,6.627 5.373,12 12,12c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12zM21.464,12.535c0.006,0.133 0.009,0.265 0.009,0.397c0,4.068 -3.095,8.756 -8.756,8.756c-1.739,0 -3.356,-0.509 -4.717,-1.383c0.241,0.029 0.486,0.042 0.735,0.042c1.443,0 2.769,-0.491 3.821,-1.318c-1.347,-0.025 -2.484,-0.915 -2.875,-2.137c0.188,0.036 0.381,0.055 0.579,0.055c0.281,0 0.554,-0.038 0.811,-0.108c-1.408,-0.282 -2.469,-1.526 -2.469,-3.017c0,-0.013 0,-0.026 0,-0.039c0.415,0.231 0.889,0.369 1.394,0.385c-0.825,-0.551 -1.369,-1.494 -1.369,-2.561c0,-0.565 0.151,-1.094 0.416,-1.547c1.518,1.862 3.786,3.088 6.343,3.216c-0.052,-0.225 -0.079,-0.46 -0.079,-0.701c0,-1.699 1.378,-3.078 3.077,-3.078c0.885,0 1.685,0.374 2.246,0.972c0.701,-0.139 1.36,-0.394 1.955,-0.747c-0.23,0.719 -0.718,1.321 -1.354,1.703c0.622,-0.074 1.215,-0.239 1.768,-0.484c-0.411,0.618 -0.932,1.159 -1.535,1.594z">
+                      </path>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            Copyright © 2021-2023
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+.slider-container {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.slider-track {
+    display: flex;
+    transition: all .3s ease;
+}
+
+.slide {
+    position: relative;
+    width: 200px;
+    height: 360px;
+    transition: all .4s ease;
+
+    @media (max-width: 1600px) {
+        height: 290px;
+    }
+
+    @media (max-width: 1300px) {
+        height: 270px;
+    }
+
+    @media (max-width: 670px) {
+        height: 200px;
+    }
+}
+
+.arrow {
+    background: transparent;
+    color: #fff;
+    line-height: 0;
+    transition: all .2s ease;
+
+    &:disabled {
+        opacity: .4;
+    }
+
+    @media (any-hover: hover) {
+        &:not(:disabled):hover {
+            color: $purpleColor;
+        }
+    }
+
+    @media (max-width: 550px) {
+        svg {
+            width: 36px;
+        }
+    }
+}

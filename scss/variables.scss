@@ -1,0 +1,135 @@
+// Colors
+$darkColor: #151424;
+$purpleColor: #5A57E0;
+$darkPurpleColor: #252341;
+
+%section-padding {
+    padding-top: 60px;
+    padding-bottom: 100px;
+
+    @media (max-width: 1200px) {
+        padding-bottom: 60px;
+    }
+
+    @media (max-width: 800px) {
+        padding-top: 30px;
+    }
+
+    @media (max-width: 450px) {
+        padding-bottom: 30px;
+    }
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: $darkColor;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: .5px;
+    color: #fff;
+}
+
+body.scroll-locked {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wrapper {
+    background: linear-gradient(180deg, #151424 68%, rgba(21, 20, 36, 0.9)), url('../img/background-bottom.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+}
+
+.container {
+    max-width: 1380px;
+    padding: 0 40px;
+    margin: 0 auto;
+
+    @media (max-width: 770px) {
+        padding: 0 20px;
+    }
+
+    @media (max-width: 550px) {
+        padding: 0 10px;
+    }
+}
+
+
+.logo {
+    display: block;
+    max-width: 140px;
+    width: 100%;
+}
+
+.sectionTitle {
+    padding-left: 10px;
+    border-left: 5px solid $purpleColor;
+}
+
+.title {
+    font-size: 25px;
+    padding: 6.5px 0 6.5px 10px;
+    border-left: 5px solid $purpleColor;
+}
+
+.bigtTitle {
+    font-size: 30px;
+    padding: 11px 0 11px 10px;
+    border-left: 5px solid $purpleColor;
+}
+
+@media (max-width: 1600px) {
+    .logo {
+        max-width: 100px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .bigtTitle {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 550px) {
+    .bigtTitle {
+        font-size: 20px;
+    }
+}
+
+.visibility-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
+.button {
+    display: inline-block;
+    width: auto;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: #fff;
+    padding: 17px 35px;
+    background-color: $purpleColor;
+    border-radius: 30px;
+    transition: all .2s ease-in;
+}
+
+@media (any-hover: hover) {
+    .button:hover {
+        background-color: #7F7DE9;
+    }
+}
+
+@media (max-width: 770px) {
+    .button {
+        font-size: 17px;
+        padding: 15px 26px;
+    }
+}

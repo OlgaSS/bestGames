@@ -1,0 +1,240 @@
+.card {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+    background: rgba(21, 20, 36, 0.7);
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+
+    @media(max-width: 770px) {
+        display: block;
+    }
+
+    &__wrapper {
+        max-width: 900px;
+
+        @media(max-width: 990px) {
+            max-width: 750px;
+        }
+
+        @media(max-width: 770px) {
+            max-width: 100%;
+            padding: 0;
+        }
+    }
+
+    &__content {
+        position: relative;
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 30px 20px;
+        background-color: $darkPurpleColor;
+        min-height: 400px;
+        padding: 20px;
+
+        @media(max-width: 990px) {
+            grid-template-columns: 140px 1fr;
+            grid-template-rows: auto;
+        }
+
+        @media(max-width: 770px) {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding: 50px 30px 90px;
+        }
+
+        @media(max-width: 550px) {
+            padding: 30px 15px 90px;
+        }
+    }
+
+    &__button-close {
+        position: absolute;
+        cursor: pointer;
+        top: 20px;
+        right: 20px;
+        background: transparent;
+        color: #fff;
+        line-height: 0;
+
+        @media(max-width: 770px) {
+            top: 40px;
+            right: 40px;
+        }
+
+        @media(max-width: 550px) {
+            top: 30px;
+            right: 20px;
+        }
+    }
+
+    &__image {
+        position: relative;
+        height: 260px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media(max-width: 770px) {
+            width: 190px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 7px 25px;
+    }
+
+    &__item {
+        font-size: 15px;
+
+        span {
+            display: inline-block;
+            margin-right: 7px;
+        }
+    }
+
+    &__description {
+        grid-column: 1/3;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    &__gallery {
+        grid-column: 1/3;
+        display: flex;
+        gap: 10px;
+    }
+
+    &__gallery-item {
+        cursor: pointer;
+        max-width: 100px;
+        height: 70px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__slider {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        overflow: scroll;
+        background-color: rgba(21, 20, 36, .9);
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media(max-width: 770px) {
+
+            img {
+                height: 400px;
+            }
+        }
+
+        @media(max-width: 600px) {
+
+            img {
+                height: 260px;
+            }
+        }
+    }
+
+    &__slider-wrapper {
+        position: relative;
+        top: -45px;
+        left: 0;
+        max-width: 820px;
+        margin: 0 auto;
+
+        @media(max-width: 990px) {
+            max-width: 670px;
+        }
+
+        @media(max-width: 770px) {
+            min-width: 100%;
+        }
+
+        @media(max-width: 550px) {
+            top: -40px;
+        }
+    }
+
+    &__slider-button {
+        position: absolute;
+        cursor: pointer;
+        top: 15px;
+        right: 15px;
+        background: $darkColor;
+        border-radius: 50%;
+        padding: 7px;
+        color: #fff;
+        line-height: 0;
+    }
+
+    &__slider-list {
+        position: absolute;
+        bottom: -90px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+
+        @media(max-width: 550px) {
+            bottom: -80px;
+        }
+    }
+
+    &__slider-item {
+        max-width: 110px;
+        height: 80px;
+        background-color: #fff;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media(max-width: 550px) {
+            max-width: 90px;
+            height: 70px;
+        }
+    }
+
+}
